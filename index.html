@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>First Web Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1 class="main-header">Cooking Home Page</h1>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="home.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p>Welcome to the world of Web Foundations.</p>
+
+    <main class="page">
+
+        <section class="content-box">
+            <h2>Basic Prep</h2>
+
+            <p>Ingredients for a PB&J Sandwich:</p>
+
+            <ol>
+                <li>Bread (any kind)</li>
+                <li>Peanut butter (crunchy if preferred)</li>
+                <li>Jelly (any flavor)</li>
+            </ol>
+
+            <button id="recipeBtn">Show Cooking Tip</button>
+
+            <p id="message"></p>
+
+        </section>
+
+    </main>
+
+    <script>
+        document.getElementById("recipeBtn").addEventListener("click", function () {
+            document.getElementById("message").textContent =
+                "Cooking Tip: Spread the peanut butter first for easier assembly!";
+        });
+    </script>
+
+</body>
+
+</html>
